@@ -40,7 +40,11 @@ export default function App() {
     try {
       setStage("writing");
 
+<<<<<<< HEAD
       const response = await fetch("https://content-creation-aiagent.onrender.com", {
+=======
+      const response = await fetch("http://localhost:5000/generate", {
+>>>>>>> e74840694ca04a91f39877e5047e4b0e1a01f69b
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ topic, contentType }),
